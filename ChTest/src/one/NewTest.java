@@ -19,6 +19,7 @@ public class NewTest {
 		 System.out.println("in beforetest");
 		 driver = new FirefoxDriver();
 
+		 System.out.println("going to open google web page");
 		 driver.get("http://google.co.in");
 		  Thread.sleep(10000);
 	}
@@ -42,9 +43,11 @@ public class NewTest {
   public void tes() throws InterruptedException
   {
 
+	  System.out.println("going to click search text box");
 	  driver.findElement(By.id("lst-ib")).sendKeys("India");
 	  Thread.sleep(7000);
 	  	  
+	  System.out.println("going to hit button");
 	  driver.findElement(By.name("btnG")).click();
 	  Thread.sleep(7000);
 	  
